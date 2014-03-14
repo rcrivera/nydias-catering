@@ -15,8 +15,28 @@
 //= require bootstrap.min.js
 //= require angular.min.js
 //= require angular-route.min.js
+//= require angular-resource.min.js
 //= require_self
 //= require_tree ./services
 //= require_tree ./filters
 //= require_tree ./controllers
 //= require_tree ./directives
+
+var ngApp = angular.module('NydiasCatering', ['ngRoute']);
+
+ngApp.config(['$routeProvider', function($routeProvider) {
+	$routeProvider.
+	when('/', {
+		templateUrl: 'assets/index.html',
+		controller: 'IndexController'
+	}).
+	otherwise({
+		redirectTo: '/'
+	});
+}]);
+
+ngApp.config([
+  "$httpProvider", function(provider) {
+    return provider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
+  }
+]);

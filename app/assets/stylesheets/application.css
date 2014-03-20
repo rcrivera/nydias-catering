@@ -13,3 +13,86 @@
  *= require angular-csp.css
  *= require bootstrap.min.css
  */
+
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Sacramento);
+ .body{
+ 	background-color: #FFF9DB;
+}
+ul.nav li a{
+	font-family: 'Poiret One', cursive;
+	font-size: 1.8em;
+	color: #9D3430;
+}
+
+div.navbar-header img.navbar-brand{
+	padding: 5px;
+}
+
+.container-fluid{
+	background-color: #FFFFFE;
+}
+
+.header-logo{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+  display: block;
+  height: 400px;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  line-height: 1;
+}
+
+.carousel-caption{
+	font-family: 'Sacramento', cursive;
+	font-size: 4.0em;
+	top: 0;
+    bottom: auto;
+}
+
+.caption-background{
+	color: #9D3430;
+	background-color:rgba(255, 255, 255, 0.70);
+}
+
+.portada{
+	background-color: #FFFFFE;
+}
+
+html.ng-scope body.body div.container div.ng-scope div.row div.slideshow{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.text_divider{
+	width: 60%;
+}
+
+.footer_divider{
+	width: 15%;
+}
+
+.centralize{
+	text-align: center;
+}
+
+.about{
+	font-family: 'Poiret One', cursive;
+	font-size: 2.2em;
+}
+
+.hightlight{
+	font-size: 2.2em;
+	color: #9D3430;
+}
+
+.footer{
+	font-family: 'Poiret One', cursive;
+	color: #858383;
+	font-size: 1.2em;
+}

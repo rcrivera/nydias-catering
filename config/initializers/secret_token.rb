@@ -9,4 +9,12 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-NydiasCatering::Application.config.secret_key_base = 'bda658f4c27feec3387a3a0ba19df9fddea02685cb5c2df0b55860dccf386278f1583d217ad976dfafb499764bd1a9358de48f8cc445185e993e0d3446f3f555'
+
+#NydiasCatering::Application.config.secret_key_base = 'bda658f4c27feec3387a3a0ba19df9fddea02685cb5c2df0b55860dccf386278f1583d217ad976dfafb499764bd1a9358de48f8cc445185e993e0d3446f3f555'
+
+secret = 'bda658f4c27feec3387a3a0ba19df9fddea02685cb5c2df0b55860dccf386278f1583d217ad976dfafb499764bd1a9358de48f8cc445185e993e0d3446f3f555'
+if secret.nil? || secret.length < 30
+  puts "Secret token cannot be loaded"
+else
+  NydiasCatering::Application.config.secret_key_base = secret
+end

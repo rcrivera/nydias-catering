@@ -16,9 +16,15 @@
 
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 @import url(http://fonts.googleapis.com/css?family=Sacramento);
+@import url(http://fonts.googleapis.com/css?family=Oswald:300);
  .body{
  	background-color: #FFF9DB;
 }
+
+p{
+	font-family: 'Oswald', sans-serif;
+}
+
 ul.nav li a{
 	font-family: 'Poiret One', cursive;
 	font-size: 1.8em;
@@ -81,12 +87,13 @@ html.ng-scope body.body div.container div.ng-scope div.row div.slideshow{
 	text-align: center;
 }
 
-.about{
+.p{
 	font-family: 'Poiret One', cursive;
 	font-size: 2.2em;
 }
 
 .hightlight{
+	font-family: 'Poiret One', cursive;
 	font-size: 2.2em;
 	color: #9D3430;
 }
@@ -95,4 +102,11 @@ html.ng-scope body.body div.container div.ng-scope div.row div.slideshow{
 	font-family: 'Poiret One', cursive;
 	color: #858383;
 	font-size: 1.2em;
+}
+
+h1.header{
+	font-size: 5em;
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+	color: #9D3430;
 }

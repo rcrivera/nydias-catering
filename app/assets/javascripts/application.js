@@ -26,6 +26,22 @@ var ngApp = angular.module('NydiasCatering', ['ngRoute']);
 
 ngApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
+	when('/servicios', {
+		templateUrl: 'assets/servicios.html',
+		controller: 'ServicioController'
+	}).
+	when('/menu', {
+		templateUrl: 'assets/menu.html',
+		controller: 'MenuController'
+	}).
+	when('/cotizaciones', {
+		templateUrl: 'assets/cotizaciones.html',
+		controller: 'CotizacionController'
+	}).
+	when('/contactenos', {
+		templateUrl: 'assets/contactenos.html',
+		controller: 'ContactoController'
+	}).
 	when('/', {
 		templateUrl: 'assets/index.html',
 		controller: 'IndexController'

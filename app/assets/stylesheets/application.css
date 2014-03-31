@@ -110,3 +110,36 @@ h1.header{
 	text-align: center;
 	color: #9D3430;
 }
+
+h2.header, div > h4{
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	color: #9D3430;
+}
+div.panel-heading.panel_heading{
+	/*
+	background-color: #f2f2f2;
+	*/
+}
+
+.menu-title{
+	color: #727272;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.3em;
+}
+
+.menu-list{
+	padding-bottom: 10px;
+}
+
+/* Menu sublist */
+div.col-md-3 ul li, div.col-md-4 ul li{
+	color: black;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2em;
+}
+
+.note{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.3em;
+}

@@ -1,5 +1,6 @@
 NydiasCatering::Application.routes.draw do
   
+  post "quotation/send_quotation"
   root 'application#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

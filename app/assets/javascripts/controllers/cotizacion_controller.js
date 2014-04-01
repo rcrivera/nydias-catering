@@ -1,4 +1,10 @@
-ngApp.controller('CotizacionController', function($scope) {
+ngApp.controller('CotizacionController', function($scope,mailerService) {
     //Grab all forums from the server
-    $scope.title = "Bienvenido a Cotizacion";
+
+    $scope.send = function(){
+    	mailerService.send_quotation($scope.contact);
+    };
+
+    //$scope.contact = {name: name};
+
 });
